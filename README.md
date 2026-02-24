@@ -29,8 +29,8 @@ Ah! Got it 😄 You want a **single copy-paste block** for your `.md` file. Here
 
 ## 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/DhonnanWork/JP-EN_Yt-Live_Transcribe
+cd JP-EN_Yt-Live_Transcribe
 ````
 
 ## 2. Create a Python Virtual Environment
