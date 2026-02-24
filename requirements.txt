@@ -1,0 +1,8 @@
+faster-whisper
+yt-dlp
+numpy
+python-dotenv
+pykakasi
+transformers
+torch
+sacremoses

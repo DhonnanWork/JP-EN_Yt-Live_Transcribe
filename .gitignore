@@ -1,0 +1,15 @@
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Ignore secrets
+.env
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore temporary text logs
+live_log.txt
+transcription_log.txt
