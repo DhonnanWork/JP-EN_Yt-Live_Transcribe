@@ -22,8 +22,6 @@ You must have the following installed on your system:
 
 *(Disclaimer for Windows Users: This script uses UNIX-style piping for FFmpeg. Ensure FFmpeg is correctly installed in your system PATH, otherwise the script will fail to capture audio).*
 
-Ah! Got it 😄 You want a **single copy-paste block** for your `.md` file. Here’s the complete version:
-
 ````markdown
 # Installation & Setup
 
