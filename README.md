@@ -23,10 +23,7 @@ You must have the following installed on your system:
 *(Disclaimer for Windows Users: This script uses UNIX-style piping for FFmpeg. Ensure FFmpeg is correctly installed in your system PATH, otherwise the script will fail to capture audio).*
 
 ````markdown
-# Installation & Setup
-
 ## 1. Clone the repository
-```bash
 git clone https://github.com/DhonnanWork/JP-EN_Yt-Live_Transcribe
 cd JP-EN_Yt-Live_Transcribe
 ````
