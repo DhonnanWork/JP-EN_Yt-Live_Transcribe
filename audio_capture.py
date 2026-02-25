@@ -17,8 +17,11 @@ class AudioCapture:
 
     def get_live_stream_url(self, url):
         try:
-            # -g gets the URL, -f bestaudio gets audio stream
-            cmd = ['yt-dlp', '-g', '-f', 'bestaudio', url]
+            # -g gets the URL.
+            # -f ba/b ensures that if an audio-only stream (ba) is missing (common in livestreams), 
+            # it falls back to the best combined stream (b). FFmpeg will just strip the video anyway.
+            cmd = ['yt-dlp', '-g', '-f', 'ba/b', url]
+            
             # Anti-Bot Headers
             cmd.extend(['--user-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'])
             
@@ -44,8 +47,9 @@ class AudioCapture:
         if status_callback:
             status_callback("[System] Initializing Download...\n")
 
-        cmd = [
-            'yt-dlp', '-f', 'bestaudio', 
+        cmd =[
+            # Also updated fallback to ba/b here to prevent VODs from failing
+            'yt-dlp', '-f', 'ba/b', 
             '-x', '--audio-format', 'wav', 
             '-o', 'temp_vod.%(ext)s',
             '--postprocessor-args', f'ffmpeg:-ar {self.sample_rate} -ac 1',
@@ -75,7 +79,7 @@ class AudioCapture:
         return None
 
     def _process_ffmpeg_stream(self, input_source):
-        ffmpeg_cmd = [
+        ffmpeg_cmd =[
             'ffmpeg', '-i', input_source, 
             '-f', 's16le', '-ac', '1',
             '-ar', str(self.sample_rate), '-acodec', 'pcm_s16le', '-loglevel', 'quiet', '-'

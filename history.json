@@ -1,5 +1,35 @@
 [
     {
+        "type": "helsinki",
+        "src_name": "Japanese",
+        "src_code": "ja",
+        "nllb_src": "jpn_Jpan",
+        "tgt_name": "English",
+        "tgt_code": "en",
+        "nllb_tgt": "eng_Latn",
+        "helsinki_id": "Helsinki-NLP/opus-mt-ja-en"
+    },
+    {
+        "type": "helsinki",
+        "src_name": "English",
+        "src_code": "en",
+        "nllb_src": "eng_Latn",
+        "tgt_name": "Indonesian",
+        "tgt_code": "id",
+        "nllb_tgt": "ind_Latn",
+        "helsinki_id": "Helsinki-NLP/opus-mt-en-id"
+    },
+    {
+        "type": "helsinki",
+        "src_name": "Indonesian",
+        "src_code": "id",
+        "nllb_src": "ind_Latn",
+        "tgt_name": "English",
+        "tgt_code": "en",
+        "nllb_tgt": "eng_Latn",
+        "helsinki_id": "Helsinki-NLP/opus-mt-id-en"
+    },
+    {
         "type": "nllb",
         "src_name": "Indonesian",
         "src_code": "id",
@@ -18,14 +48,5 @@
         "tgt_code": "id",
         "nllb_tgt": "ind_Latn",
         "helsinki_id": null
-    },
-    {
-        "type": "helsinki",
-        "src_name": "English",
-        "src_code": "en",
-        "tgt_name": "Indonesian",
-        "tgt_code": "id",
-        "nllb_tgt": "ind_Latn",
-        "helsinki_id": "Helsinki-NLP/opus-mt-en-id"
     }
 ]
