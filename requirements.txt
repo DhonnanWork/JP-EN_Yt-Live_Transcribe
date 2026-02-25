@@ -1,8 +1,16 @@
-faster-whisper
-yt-dlp
-numpy
-python-dotenv
-pykakasi
-transformers
+# AI & Machine Learning
 torch
-sacremoses
+transformers
+faster-whisper
+huggingface_hub
+safetensors
+
+# Audio Processing
+numpy
+sounddevice
+pykakasi
+
+# Utilities & Networking
+yt-dlp
+python-dotenv
+requests

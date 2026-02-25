@@ -1,0 +1,31 @@
+[
+    {
+        "type": "nllb",
+        "src_name": "Indonesian",
+        "src_code": "id",
+        "nllb_src": "ind_Latn",
+        "tgt_name": "English",
+        "tgt_code": "en",
+        "nllb_tgt": "eng_Latn",
+        "helsinki_id": null
+    },
+    {
+        "type": "nllb",
+        "src_name": "English",
+        "src_code": "en",
+        "nllb_src": "eng_Latn",
+        "tgt_name": "Indonesian",
+        "tgt_code": "id",
+        "nllb_tgt": "ind_Latn",
+        "helsinki_id": null
+    },
+    {
+        "type": "helsinki",
+        "src_name": "English",
+        "src_code": "en",
+        "tgt_name": "Indonesian",
+        "tgt_code": "id",
+        "nllb_tgt": "ind_Latn",
+        "helsinki_id": "Helsinki-NLP/opus-mt-en-id"
+    }
+]

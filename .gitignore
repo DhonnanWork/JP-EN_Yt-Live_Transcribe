@@ -2,6 +2,7 @@
 venv/
 env/
 .venv/
+jp-transcribe/
 
 # Ignore secrets
 .env
@@ -13,3 +14,4 @@ __pycache__/
 # Ignore temporary text logs
 live_log.txt
 transcription_log.txt
+*.txt
